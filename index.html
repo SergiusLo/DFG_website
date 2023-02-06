@@ -5,7 +5,724 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DFG</title>
+
     <link rel="stylesheet" href="./public/styles.css" />
+
+    <script defer src="./app.js"></script>
   </head>
-  <body class="font-main"></body>
+  <body class="font-main text-main-color">
+    <header>
+      <div class="container">
+        <div class="flex justify-between min-h-[100px] items-center">
+          <div class="flex">
+            <a href="#">
+              <img
+                class="max-h-[50px] max-w-[200px]"
+                src="./public/images/logo.svg"
+                alt=""
+            /></a>
+
+            <p
+              class="hidden xl:flex text-[10px] leading-[12px] text-second-color flex items-end ml-[15px] max-w-[187px]"
+            >
+              DFG is a holding company for JetRuby, Jet Solutions, OZ Solutions
+            </p>
+          </div>
+          <div class="flex items-center">
+            <nav class="hidden xl:block ">
+              <menu class="">
+                <ul
+                  class="flex space-x-[30px] pr-[30px] items-center text-[17px] leading-[21px]"
+                >
+                  <li><a href="#">Cases</a></li>
+                  <li><a href="#">HR Project Audit</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Contacts</a></li>
+                </ul>
+              </menu>
+            </nav>
+            <button
+              class="flex  order-2 items-center justify-center py-[15px] px-[37px] bg-[#fff] border-solid border-second-color border-2 rounded-lg text-second-color text-[20px] leading-[20px] font-semibold hover:bg-second-color hover:text-[#fff] transition-all duration-400"
+            >
+              Get in touch
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section
+        style="background-image: url('./public/images/bg-hero.svg')"
+        class="bg-cover bg-no-repeat bg-center min-w-full min-h-full border-t border-solid border-[#E0E0E0] mb-[50px] xl:mb-[150px]"
+      >
+        <div class="container">
+          <h1
+            class="text-main-color lg:text-[50px] text-center 800:text-left lg:leading-[61px] 800:text-[40px] text-[36px] leading-[42px] 800:leading-[42px] font-bold mb-[20px] mt-[35px] flex flex-col items-center lg:items-start "
+          >
+            The development company with
+            <span class="text-second-color inline-block "
+              >deep expertise in HR App Development.
+            </span>
+          </h1>
+          <p class="lg:text-[25px] text-[22px]  leading-[30px] text-main-color lg:mb-[60px] mb-[30px] text-center lg:text-left">
+            <span
+              class="lg:text-[25px] text-[22px] text-second-color font-semibold text-[25px] leading-[30px]"
+              ><span class="text-[30px] leading-[36px]">57</span> HR
+              applications</span
+            >
+            developed since 2010.
+          </p>
+          <p
+            class="text-center xl:text-left  text-main-color 800:text-[30px] text-[25px] font-medium leading-[31px] mb-[20px] "
+          >
+            We offer a
+            <span class="text-second-color">FREE HR Project</span> Audit with:
+          </p>
+          <div class="grid grid-cols-1 gap-[20px] item xl:grid-cols-2 mb-[20px]">
+            <div class="bg-[#F7F8F7] flex flex-col items-center xl:items-start">
+              <div
+                class="flex items-center space-x-[30px] mb-[20px] pt-[30px] pl-[40px]"
+              >
+                <div>
+                  <img
+                    class="border-none rounded-full"
+                    src="./public/images/bruce.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="w-[248px] min-h-[91px] pr-[5px] 600:pr-0">
+                  <p
+                    class="font-semibold text-second-color text-[26px] leading-[31px]"
+                  >
+                    Bruce Bolger
+                  </p>
+                  <p class="text-[20px] leading-[26px] text-[#7D7D7D] ">
+                    World-renowned expert in HR solutions
+                  </p>
+                </div>
+              </div>
+              <p
+                class="text-[24px] leading-[31px] text-main-color px-[40px] pb-[40px] max-w-[517px] row-auto overflow-hidden"
+              >
+                Bruce will examine your project from a structural and the ROI of
+                engagement standpoint.
+              </p>
+            </div>
+
+            <div class="bg-[#F7F8F7] flex flex-col items-center xl:items-start">
+              <div class="flex items-center space-x-[30px]">
+                <div class="mt-[30px] mb-[20px] ml-[40px]">
+                  <img
+                    class="border-none rounded-full"
+                    src="./public/images/ivan.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="pr-[5px] 600:pr-0 ">
+                  <p
+                    class="font-semibold text-main-color text-[26px] leading-[31px]"
+                  >
+                    Ivan Ivanov
+                  </p>
+                  <p
+                    class="text-[20px] leading-[26px] text-[#7D7D7D] max-w-[228px]"
+                  >
+                    Technical expert in HR app development
+                  </p>
+                </div>
+              </div>
+              <p
+                class="text-[24px] leading-[31px] text-main-color max-w-[517px] px-[40px] pb-[71px] row-auto overflow-hidden"
+              >
+                Ivan will analyze and clarify the technical requirements of your
+                project.
+              </p>
+            </div>
+          </div>
+          <button
+            class="flex justify-center items-center mx-auto font-semibold text-[24px] leading-[20px] text-[white]  bg-second-color rounded-lg py-[18px] px-[42px] min-w-[261px] max-h-[56px] mb-[10px] hover:bg-[#fff] hover:text-second-color hover:border-2 hover:border-second-color transition duration-400"
+          >
+            Schedule Audit
+          </button>
+        </div>
+      </section>
+      <section class="mb-[50px] xl:mb-[150px]"
+      >
+        <div class="container">
+          <div class="flex flex-col xl:flex-row justify-between items-center ">
+            <div>
+              <h3
+                class="text-center xl:text-left text-[40px] leading-[120%] font-bold text-[#101828] mb-[20px]"
+              >
+                Our <span class="text-second-color"> clients</span>
+              </h3>
+              <p
+                class=" text-center xl:text-left xl:max-w-[480px] text-[24px] leading-[135%] text-[#101828] mb-[28px]"
+              >
+                More than 40% of our clients have chosen us as their long-term
+                technology partners.
+              </p>
+              <div class="slider mb-[20px] xl:mb-0 flex justify-center xl:block">
+                <div>
+                  <ul class=" flex items-center space-x-[15px] self-end max-w-[590px]">
+                   <li><img class="" src="./public/images/namecoach.svg" alt="" /></li> 
+                   <li> <img class="h-[50px]" src="./public/images/go-pro.svg" alt="" /></li>
+                   <li><img src="./public/images/every-pig.svg" alt="" /></li>
+                   <li>  <img src="./public/images/tank-clarity.svg" alt="" /></li>
+                 
+                  </ul>
+                </div>
+              </div>
+    
+              
+            </div>
+
+            <div
+              class="flex flex-col items-center justify-center border-2 border-[#2979FF] border-opacity-25 xl:min-w-[536px]"
+            >
+              <p
+                class="text-[24px] leading-[140%] text-[#536076] px-[17px] pt-[32px] pb-[20px] max-w-[480px] text-center"
+              >
+                Need a dedicated team of world-class developers?
+              </p>
+
+              <button
+                class="font-semibold text-[24px] leading-[20px] text-[#fff] px-[42px] py-[18px] bg-second-color rounded-lg self-center border-2 justify-center mb-[32px] hover:bg-[#fff] hover:text-second-color hover:border-2 hover:border-second-color transition duration-400"
+              >
+                Let’s Talk
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        style="background-image: url('./public/images/bg-certificate.svg')"
+        class="bg-cover bg-no-repeat bg-center min-w-full min-h-full border-t border-solid border-[#E0E0E0]  mb-[50px] xl:mb-[150px]"
+      >
+        <div class="container">
+          <div>
+            <div class="flex flex-col items-center">
+              <h2
+                class="mt-[100px] mb-[20px] text-[40px] leading-[48px] font-bold text-center"
+              >
+                We are the first IT company in the world
+              </h2>
+              <p
+                class="mb-[48px] text-[24px] leading-[32px] max-w-[846px] text-center"
+              >
+                that is consistent with the latest
+                <span class="text-second-color font-semibold leading-[135%]"
+                  >internationally recognized HR standards<br />
+                  <span class="text-second-color font-bold"
+                    >ISO 30414</span
+                  ></span
+                >
+                Human Capital Management and
+                <span class="text-second-color font-bold">ISO 10018</span>
+                People Engagement.
+              </p>
+            </div>
+            <div class="flex flex-col xl:flex-row items-center justify-evenly pb-[95px]">
+              <div class="flex flex-col justify-center items-center">
+                <h4 class="font-semibold text-[26px] leading-[31px] mb-[20px]">
+                  ISO compliance Certificate
+                </h4>
+                <div class="mb-[40px]">
+                  <img src="./public/images/registration.jpg" alt="" />
+                </div>
+                <a
+                  class="text-[24px] leading-[20px] font-semibold text-second-color mb-[30px] xl:mb-0 hover:transform hover:scale-150 transition duration-400"
+                  href="#"
+                  >Read more</a
+                >
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <h4 class="font-semibold text-[26px] leading-[31px] mb-[20px]">
+                  Human Capital report
+                </h4>
+                <div class="mb-[25px]">
+                  <img src="./public/images/report-presentation.jpg" alt="" />
+                </div>
+                <button
+                  class="rounded-lg py-[18px] px-[42px] bg-second-color text-[white] text-center font-semibold text-[24px] leading-[20px] border-2 border-transparent hover:bg-[#fff] hover:text-second-color hover:border-2 hover:border-second-color transition duration-400"
+                >
+                  Download report
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class=" mb-[50px] xl:mb-[150px]">
+        <div class="container">
+          <div class="flex flex-col items-center ">
+            <h2 class="text-[40px] leading-[48px] font-bold mb-[60px] text-center xl:text-left">
+              Our recent cases
+            </h2>
+            <div
+              class="px-[10px] xl:pl-[40px] bg-[#F7F8F7] flex justify-between items-center mb-[40px]"
+            >
+              <div>
+                <div class="mt-[40px] mb-[30px]">
+                  <img src="./public/images/universum.svg" alt="universum" />
+                </div>
+                <div class="mb-[23px]">
+                  <a
+                    class="text-[20px] leading-[24px] font-semibold text-[#E65100]"
+                    href="#"
+                    >universumglobal.com</a
+                  >
+                </div>
+                <div
+                  class="text-[24px] text-[#101828] leading-[32px] mb-[30px] max-w-[540px]"
+                >
+                  <p>
+                    Founded in 1988, Universum Global is a world-class,
+                    multi-faceted international corporation that helps students
+                    and professionals find <br />
+                    career opportunities.
+                  </p>
+                  <p>
+                    Our team worked on the following Universum projects: Survey
+                    Central, Attribot, Talent Radar, TOP 100, Nebula Users, and
+                    Directory.
+                  </p>
+                </div>
+                <p
+                  class="text-[20px] leading-[24px] text-[#212121] mb-[40px] mr-[63px]"
+                >
+                  <span class="text-[#7D7D7D]">Stacks:</span> Ruby on Rails,
+                  PostgreSQL, Elasticsearch, Reactjs
+                </p>
+                <a
+                  class="inline-block arrow-up-right relative pr-[28px] text-second-color text-[24px] font-semibold leading-[29px] mb-[40px] hover:underline transition-all duration-300 "
+                  href="#"
+                  >Read the case</a
+                >
+              </div>
+              <div class="hidden 800:block">
+                <img src="./public/images/macbook-pro.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="px-[10px] xl:pl-[40px] bg-[#F7F8F7] flex justify-between items-center"
+            >
+              <div>
+                <div class="mt-[40px] mb-[30px] ">
+                  <img
+                    class="m-[-24px]"
+                    src="./public/images/hellocecil.svg"
+                    alt="universum"
+                  />
+                </div>
+                <div class="mb-[23px]">
+                  <a
+                    class="text-[20px] leading-[24px] font-semibold text-[#E65100]"
+                    href="#"
+                    >hellocecil.com</a
+                  >
+                </div>
+                <div
+                  class="text-[24px] text-[#101828] leading-[32px] mb-[30px] max-w-[540px]"
+                >
+                  <p>
+                    A successful startup that takes the guesswork out of
+                    screening resumes.
+                  </p>
+                  <p>
+                    For Hellocecil, we have built one of the most user-friendly
+                    and straightforward platforms for video interviewing.
+                  </p>
+                </div>
+                <p
+                  class="text-[20px] leading-[24px] text-[#212121] mb-[40px] mr-[63px]"
+                >
+                  <span class="text-[#7D7D7D]">Stacks:</span> Ruby on Rails,
+                  PostgreSQL, Elasticsearch, Reactjs
+                </p>
+                <a
+                  class="inline-block arrow-up-right relative pr-[28px] text-second-color text-[24px] font-semibold leading-[29px] mb-[40px] hover:underline transition-all duration-300 "
+                  href="#"
+                  >Read the case</a
+                >
+              </div>
+              <div class="hidden 800:block">
+                <img src="./public/images/macbook-pro-2.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mb-[50px] xl:mb-[150px]">
+        <div class="container">
+          <div>
+            <h3
+              class="text-[40px] leading-[48px] font-bold mb-[40px] text-center"
+            >
+              We are experts in the most popular
+              <span class="text-second-color">Technologies</span>
+            </h3>
+            <div
+              class="grid grid-cols-1  600:grid-cols-2 xl:grid-cols-4 gap-[20px] bg-cover bg-center"
+              style="background-image: url(./public/images/elips.png)"
+            >
+              <div class="flex items-center  bg-[#fff]">
+                <div class="p-[18px]">
+                  <img src="./public/images/ruby-logo.svg" alt="" />
+                </div>
+                <div>
+                  <p class="jobs">5 jobs</p>
+                  <p class="names-company">Ruby on Rails</p>
+                </div>
+              </div>
+              <div class="flex items-center  bg-[#fff]">
+                <div class="p-[18px]">
+                  <img src="./public/images/react-logo.svg" alt="" />
+                </div>
+                <div>
+                  <p class="jobs">4 jobs</p>
+                  <p class="names-company">React JS</p>
+                </div>
+              </div>
+              <div class="flex items-center  bg-[#fff]">
+                <div class="p-[18px]">
+                  <img src="./public/images/elixir-logo.svg" alt="" />
+                </div>
+                <div>
+                  <p class="jobs">6 jobs</p>
+                  <p class="names-company">Elixir</p>
+                </div>
+              </div>
+              <div class="flex items-center  bg-[#fff]">
+                <div class="p-[18px]">
+                  <img src="./public/images/node-logo.svg" alt="" />
+                </div>
+                <div>
+                  <p class="jobs">10 jobs</p>
+                  <p class="names-company">Node.js</p>
+                </div>
+              </div>
+              <div class="flex items-center  bg-[#fff]">
+                <div class="p-[18px]">
+                  <img src="./public/images/kubernetes-logo.svg" alt="" />
+                </div>
+                <div>
+                  <p class="jobs">4 jobs</p>
+                  <p class="names-company">Kubernetes</p>
+                </div>
+              </div>
+
+              <div class="flex items-center  bg-[#fff]">
+                <div class="p-[18px]">
+                  <img src="./public/images/aws-logo.svg" alt="" />
+                </div>
+                <div>
+                  <p class="jobs">8 jobs</p>
+                  <p class="names-company">AWS</p>
+                </div>
+              </div>
+              <div class="flex items-center  bg-[#fff]">
+                <div class="p-[18px]">
+                  <img src="./public/images/swift-logo.svg" alt="" />
+                </div>
+                <div>
+                  <p class="jobs">5 jobs</p>
+                  <p class="names-company">Swift</p>
+                </div>
+              </div>
+              <div class="flex items-center  bg-[#fff]">
+                <div class="p-[18px]">
+                  <img src="./public/images/kotlin-logo.svg " alt="" />
+                </div>
+                <div>
+                  <p class="jobs">2 jobs</p>
+                  <p class="names-company">Kotlin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mb-[50px] xl:mb-[150px]">
+        <div class="container">
+          <div class="">
+            <h3 class="text-center xl:text-left text-[40px] font-bold leading-[48px] mb-[20px] ">About us</h3>
+            <div class="flex flex-col gap-[20px] items-center text-center xl:text-left xl:items-start xl:flex-row xl:gap-[67px] text-[24px] leading-[29px] mb-[40px]">
+              <p class="block xl:max-w-[470px]">
+                Digital Future Group was founded as an App development company
+                in 2010 and grew into a holding company for
+                <span class="text-second-color">JetRuby agency, Jet Solutions, OZ Solutions.</span>
+              </p>
+              <div class="xl:max-w-[598px]"> 
+                <p class="xl:mb-[10px]">
+                From the very beginning, DFG has been specializing in developing
+                applications for HR management. </p>
+                <p class="xl:max-w-[560px]">
+                  Safe to say that over 10 years
+                  of experience made our team a recognized expert in this field.
+                </p>
+               
+              </div>
+             
+            </div>
+            <div class="relative z-30 grid 600:grid-cols-2 xl:grid-cols-4 gap-y-[24px] gap-x-[20px] background-about">
+              <div class="about-us-item ">
+                <div class="mb-[20px]">
+                  <img src="./public/images/star.svg" alt="" />
+                </div>
+                <p class="about-us-text">
+                  <span class="text-second-color">11 years</span> on the market
+                </p>
+              </div>
+              <div class="about-us-item">
+                <div class="mb-[20px]">
+                  <img src="./public/images/tag.svg" alt="" />
+                </div>
+                <p class="about-us-text">
+                  <span class="text-second-color">257 accomplished Apps</span>
+                  in 16 niches
+                </p>
+              </div>
+              <div
+                class="about-us-item "
+              >
+                <div class="mb-[20px]">
+                  <img src="./public/images/schedule.svg" alt="" />
+                </div>
+                <p class="about-us-text">
+                  <span class="text-second-color">58%</span> annual growth
+                </p>
+              </div>
+              <div class="about-us-item">
+                <div class="mb-[20px]">
+                  <img src="./public/images/earth.svg" alt="" />
+                </div>
+                <p class="about-us-text">
+                  Clients from
+                  <span class="text-second-color">24 countries </span>
+                </p>
+              </div>
+              <div class="about-us-item">
+                <div class="mb-[20px]">
+                  <img src="./public/images/diamond.svg" alt="" />
+                </div>
+                <p class="about-us-text">
+                  <span class="text-second-color">100+</span> in-house
+                  engineers.
+                  <p class="about-us-text"><span class="text-second-color">29%</span> Senior+
+                    level.</p> 
+                </p>
+              </div>
+              <div class="about-us-item">
+                <div class="mb-[20px]">
+                  <img src="./public/images/success.svg" alt="" />
+                </div>
+                <p class="font-bold text-[22px] leading-[125%] max-w-[250px] overflow-hidden">
+                  <span class="text-second-color">ISO 30414</span> (Human
+                  Capital) and <span class="text-second-color">ISO 10018</span> (People
+                  Engagement standards) Consistent
+                </p>
+              </div>
+              <div class="about-us-item">
+                <div class="mb-[20px]">
+                  <img src="./public/images/book.svg" alt="" />
+                </div>
+                <p class="about-us-text mb-[10px]">
+                  JetRuby <span class="text-second-color">Academy</span>
+                </p>
+                <p class="text-[18px] leading-[130%] max-w-[249px]">
+                  We run quarterly courses on Ruby on Rails, React.js, iOS,
+                  Android, Quality Assurance, and Product Management.
+                </p>
+              </div>
+              <div class="about-us-item">
+                <div class="mb-[20px]">
+                  <img src="./public/images/building-two.svg " alt="" />
+                </div>
+                <p class="about-us-text">Offices:</p>
+                <p class="text-[18px] leading-[26px] max-w-[249px]">
+                  San Francisco, USA Krasnodar, Russia Lviv, Ukraine
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mb-[50px] xl:mb-[150px]">
+        <div class="container">
+          <div class="flex flex-col items-center  xl:flex-row justify-between gap-[20px] xl:gap-[7.6875rem] xl:items-start">
+             <div>
+              <h4 class="text-[26px]  leading-[1.5rem]  600:leading-[3rem] 600:text-[2.5rem]  font-bold xl:max-w-[390px]">4 most <span class="text-second-color">popular questions</span> we get</h4>
+             </div>
+             <div class="accordion 600:text-[1.125rem] leading-[130%] ">
+             <div class="contain">
+              <div class="label pt-[8px]">What is your estimate?
+              </div>
+              <div class="content min-w-full ">
+              <p class="mb-[10px]">Since 2010, we've successfully implemented 160+ projects for industries like E-Commerce, the Internet of Things, Digital music distribution, E-Learning, and many more.</p>
+              <p>Since 2010, we've successfully implemented 160+ projects for industries like E-Commerce, the Internet of Things, Digital music distribution, E-Learning, and many more.</p>
+            </div>
+             </div>
+             <hr>
+             <div class="contain">
+              <div class="label pt-[1.25rem]">Have you built an App similar to mine?
+              </div>
+              <div class="content ">
+              <p>Since 2010, we've successfully implemented 160+ projects for industries like E-Commerce, the Internet of Things, Digital music distribution, E-Learning, and many more.</p>
+              <p>Since 2010, we've successfully implemented 160+ projects for industries like E-Commerce, the Internet of Things, Digital music distribution, E-Learning, and many more.</p>
+            </div>
+             </div>
+             <hr>
+             <div class="contain">
+              <div class="label pt-[1.25rem]">When will my App be ready?
+              </div>
+              <div class="content ">
+              <p>Since 2010, we've successfully implemented 160+ projects for industries like E-Commerce, the Internet of Things, Digital music distribution, E-Learning, and many more.</p>
+              <p class="mb-[15px]">Since 2010, we've successfully implemented 160+ projects for industries like E-Commerce, the Internet of Things, Digital music distribution, E-Learning, and many more.</p>
+            </div>
+             </div>
+             <hr>
+             <div class="contain">
+              <div class="label pt-[1.25rem]">Will the time difference be a problem?
+              </div>
+              <div class="content">
+              <p>Since 2010, we've successfully implemented 160+ projects for industries like E-Commerce, the Internet of Things, Digital music distribution, E-Learning, and many more.</p>
+              <p>Since 2010, we've successfully implemented 160+ projects for industries like E-Commerce, the Internet of Things, Digital music distribution, E-Learning, and many more.</p>
+            </div>
+             </div>
+             <hr>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mb-[50px] xl:mb-[150px] bg-color">
+<div class="container">
+  <div class=" flex relative justify-center lg:justify-start">
+
+    <div class="flex flex-col items-center  lg:items-start z-50">
+        <h4 class="max-w-[80%] text-center lg:text-left font-bold text-[20px] 400:text-[36px] leading-[36px] 600:leading-[48px] mb-[23px] mt-[40px] 400:mt-[81px] 400:max-w-[784px]">The MOST complete Guide to Finding the Best Developer for your App.
+        </h4>
+        <ul class="flex flex-col items-center lg:block 400:text-[20px] leading-[130%] space-y-[10px] mb-[37px]">
+          <li class="circle-app relative pl-[32px] ">
+            <p>Freelancer vs Agency. Pros & Cons</p>
+          </li>
+          <li class="circle-app relative pl-[32px] ">
+            <p>9 signs of a good and bad developer</p>
+          </li>
+          <li class="circle-app relative pl-[32px]"><p>How & Where to look for developers</p></li>
+          <li class="circle-app relative pl-[32px] "><p>11 questions to ask any developer</p></li>
+        </ul>
+        <div class="max-w-[80%] 400:max-w-[460px] bg-[#ffffff] mb-[40px] pt-[25px] pl-[20px] pb-[40px] pr-[40px]">
+          <h6 class="text-[25px] font-semibold leading-[130%] text-second-color mb-[15px]">2 Bonus GIFTS:</h6>
+        <ol class="list-number">
+          <li class="list-number-item mb-[10px] text-[20px] leading-[130%] text-[#101828]">
+           
+              Automated Developer Evaluation Matrix
+              <p class="text-[18px] text-[#4F4F4F] 400:ml-[22px]">Score every developer and hire the best one!</p> 
+           
+          </li>
+          <li class="list-number-item text-[20px] leading-[130%] text-[#101828]">
+            
+           
+              Developers Comparison Template.
+              <p  class="text-[18px] text-[#4F4F4F] 400:ml-[22px]">Most important decision-making information organized in one place</p> 
+          </li>
+        </ol>
+      </div>
+        <div class="flex max-w-[80%] flex-col 800:flex-row mb-[124px]">
+          <input class="py-[25px]  border border-[#E0E0E0] rounded-lg mb-[10px] 800:mb-0 800:rounded-none 800:rounded-l-lg placeholder:text-[20px] placeholder:leading-[20px] placeholder:text-[#A6A6A6] 800:p-y-[18px] pr-[100px] pl-[23px] focus:text-[#A6A6A6] focus:leading-[20px] text-[20px]" placeholder="mail@example.com" type="email">
+          <button class="800:rounded-none py-[18px] pr-[38px] pl-[31px] text-[24px] leading-[20px] font-semibold text-[#fff] bg-[#2979FF] rounded-lg 800:rounded-r-lg border
+          hover:bg-[#fff] hover:text-second-color hover:border-[1px] hover:border-second-color transition duration-400">Download now</button>
+        </div>
+    </div>
+
+    <div class="absolute right-[-158px] z-0 hidden lg:block">
+      <img src="./public/images/guide-finding-img.png" alt="">
+    </div>
+  </div>
+</div>
+      </section>
+      <section class="mb-[50px] xl:mb-[150px]">
+        <div class="container">
+          <div>
+            <h4
+            class="text-center xl:text-left text-main-color text-[30px] 800:text-[40px] font-bold leading-[48px] mb-[30px]"
+          >
+            We offer a FREE HR Project Audit with:
+          </h4>
+          <div class="grid grid-cols-1 gap-[20px] item xl:grid-cols-2 mb-[20px]">
+            <div class="bg-[#F7F8F7] flex flex-col items-center xl:items-start">
+              <div
+                class="flex items-center space-x-[30px] mb-[20px] pt-[30px] pl-[40px]"
+              >
+                <div>
+                  <img
+                    class="border-none rounded-full"
+                    src="./public/images/bruce.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="w-[248px] min-h-[91px] pr-[5px] 600:pr-0">
+                  <p
+                    class="font-semibold text-second-color text-[26px] leading-[31px]"
+                  >
+                    Bruce Bolger
+                  </p>
+                  <p class="text-[20px] leading-[26px] text-[#7D7D7D] ">
+                    World-renowned expert in HR solutions
+                  </p>
+                </div>
+              </div>
+              <p
+                class="text-[24px] leading-[31px] text-main-color px-[40px] pb-[40px] max-w-[517px] row-auto overflow-hidden"
+              >
+                Bruce will examine your project from a structural and the ROI of
+                engagement standpoint.
+              </p>
+            </div>
+
+            <div class="bg-[#F7F8F7] flex flex-col items-center xl:items-start">
+              <div class="flex items-center space-x-[30px]">
+                <div class="mt-[30px] mb-[20px] ml-[40px]">
+                  <img
+                    class="border-none rounded-full"
+                    src="./public/images/ivan.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="pr-[5px] 600:pr-0 ">
+                  <p
+                    class="font-semibold text-main-color text-[26px] leading-[31px]"
+                  >
+                    Ivan Ivanov
+                  </p>
+                  <p
+                    class="text-[20px] leading-[26px] text-[#7D7D7D] max-w-[228px]"
+                  >
+                    Technical expert in HR app development
+                  </p>
+                </div>
+              </div>
+              <p
+                class="text-[24px] leading-[31px] text-main-color max-w-[517px] px-[40px] pb-[71px] row-auto overflow-hidden"
+              >
+                Ivan will analyze and clarify the technical requirements of your
+                project.
+              </p>
+            </div>
+          </div>
+          <button
+            class="flex justify-center items-center mx-auto font-semibold text-[24px] leading-[20px] text-[white] border bg-second-color rounded-lg py-[18px] px-[42px] min-w-[261px] max-h-[56px] mb-[10px]
+            hover:bg-[#fff] hover:text-second-color hover:border-2 hover:border-second-color transition duration-400"
+          >
+            Schedule Audit
+          </button>
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+  </body>
 </html>
