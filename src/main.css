@@ -22,6 +22,69 @@
   @apply bg-[#F7F8F7] flex flex-col 600:items-start items-center 600:text-left text-center  p-[20px] pt-[30px] z-30;
 }
 
+.menu-btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+}
+
+.menu-btn span {
+
+
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  width: 40px;
+  height: 3px;
+  background: #000;
+}
+
+.menu-btn span::after,
+.menu-btn span::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: #000;
+}
+.menu-btn span::after {
+  top: 10px;
+}
+.menu-btn span::before {
+  bottom: 10px;
+}
+
+.btn--active span{
+  transition: transform 0.3s;
+
+height: 0;
+}
+.hid{
+  overflow: hidden;
+}
+.btn--active span::after{
+  transform: rotate(45deg);
+  top: -2px;
+
+}
+.btn--active span::before{
+  transform: rotate(315deg);
+  bottom: 0;
+}
+
+.menu {
+  overflow: hidden;
+
+  /* opacity: 0; */
+  /* transform: translateY(-400px); */
+}
+.menu--active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
 .arrow-up-right::after {
   position: absolute;
   top: 0;
@@ -84,7 +147,6 @@
 }
 .accordion .contain.active .content {
   height: 260px;
-
 }
 
 .accordion .contain.active .label::before {
@@ -117,18 +179,29 @@
   content: counter(num) ". ";
   display: inline-block;
 }
+.linear_shadow::before {
+  position: absolute;
+  content: "";
+  background: linear-gradient(
+    90deg,
+    #ffffff 10.55%,
+    rgba(255, 255, 255, 0) 26.32%
+  );
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+}
 
 @media (min-width: 360px) {
   .accordion .contain.active .content {
     height: 260px;
-    
   }
 }
 
 @media (min-width: 420px) {
   .accordion .contain.active .content {
     height: 190px;
-
   }
 }
 

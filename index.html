@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DFG</title>
-
+    <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide.min.css">
     <link rel="stylesheet" href="./public/styles.css" />
 
-    <script defer src="./app.js"></script>
+
   </head>
-  <body class="font-main text-main-color">
-    <header>
+  <body class="font-main text-main-color ">
+    <header class="relative ">
       <div class="container">
         <div class="flex justify-between min-h-[100px] items-center">
           <div class="flex">
@@ -28,24 +28,27 @@
               DFG is a holding company for JetRuby, Jet Solutions, OZ Solutions
             </p>
           </div>
-          <div class="flex items-center">
-            <nav class="hidden xl:block ">
-              <menu class="">
-                <ul
-                  class="flex space-x-[30px] pr-[30px] items-center text-[17px] leading-[21px]"
+          <div class=" flex items-center">
+            <div class="lg:hidden menu-btn z-50"><span class=" cursor-pointer  block"></span></div>
+            
+            
+            <nav class="navig lg:block ">
+                <ul 
+                  class="menu transition-all duration-300 translate-y-[-1000px] lg:translate-y-[0] text-[#fff] text-[22px] flex  items-center justify-center flex-col opacity-0 lg:opacity-100 lg:w-auto lg:h-auto w-[100%] h-[100vh] lg:flex lg:static absolute left-0 top-0 bg-second-color lg:bg-[#fff] lg:flex-row lg:text-main-color gap-[30px] lg:items-center lg:text-[17px] lg:leading-[21px]"
                 >
                   <li><a href="#">Cases</a></li>
                   <li><a href="#">HR Project Audit</a></li>
                   <li><a href="#">About us</a></li>
                   <li><a href="#">Contacts</a></li>
+                  <button
+                  class="flex  items-center justify-center py-[15px] px-[37px] bg-[#fff] border-solid border-second-color border-2 rounded-lg text-second-color text-[20px] leading-[20px] font-semibold lg:hover:bg-second-color lg:hover:text-[#fff] transition-all duration-400"
+                >
+                  Get in touch
+                </button>
                 </ul>
-              </menu>
+
             </nav>
-            <button
-              class="flex  order-2 items-center justify-center py-[15px] px-[37px] bg-[#fff] border-solid border-second-color border-2 rounded-lg text-second-color text-[20px] leading-[20px] font-semibold hover:bg-second-color hover:text-[#fff] transition-all duration-400"
-            >
-              Get in touch
-            </button>
+           
           </div>
         </div>
       </div>
@@ -162,14 +165,34 @@
                 More than 40% of our clients have chosen us as their long-term
                 technology partners.
               </p>
-              <div class="slider mb-[20px] xl:mb-0 flex justify-center xl:block">
-                <div>
-                  <ul class=" flex items-center space-x-[15px] self-end max-w-[590px]">
-                   <li><img class="" src="./public/images/namecoach.svg" alt="" /></li> 
-                   <li> <img class="h-[50px]" src="./public/images/go-pro.svg" alt="" /></li>
-                   <li><img src="./public/images/every-pig.svg" alt="" /></li>
-                   <li>  <img src="./public/images/tank-clarity.svg" alt="" /></li>
-                 
+              <div class="splide mb-[20px] xl:mb-0 flex justify-center xl:block ">
+                <div class="splide__track">
+                  <ul class="splide__list flex items-center space-x-[15px] self-end max-w-[590px] relative linear_shadow">
+                   <li class="splide__slide">
+                    <img class="" src="./public/images/namecoach.svg" alt="" />
+                  </li> 
+                   <li class="splide__slide">
+                     <img class="h-[50px]" src="./public/images/go-pro.svg" alt="" />
+                    </li>
+                   <li class="splide__slide">
+                    <img src="./public/images/every-pig.svg" alt="" />
+                  </li>
+                   <li class="splide__slide"> 
+                     <img src="./public/images/tank-clarity.svg" alt="" />
+                    </li>   
+                    <li class="splide__slide">
+                      <img class="" src="./public/images/namecoach.svg" alt="" />
+                    </li> 
+                     <li class="splide__slide">
+                       <img class="h-[50px]" src="./public/images/go-pro.svg" alt="" />
+                      </li>
+                     <li class="splide__slide">
+                      <img src="./public/images/every-pig.svg" alt="" />
+                    </li>
+                     <li class="splide__slide"> 
+                       <img src="./public/images/tank-clarity.svg" alt="" />
+                      </li>        
+
                   </ul>
                 </div>
               </div>
@@ -630,7 +653,7 @@
         </ol>
       </div>
         <div class="flex max-w-[80%] flex-col 800:flex-row mb-[124px]">
-          <input class="py-[25px]  border border-[#E0E0E0] rounded-lg mb-[10px] 800:mb-0 800:rounded-none 800:rounded-l-lg placeholder:text-[20px] placeholder:leading-[20px] placeholder:text-[#A6A6A6] 800:p-y-[18px] pr-[100px] pl-[23px] focus:text-[#A6A6A6] focus:leading-[20px] text-[20px]" placeholder="mail@example.com" type="email">
+          <input class="py-[18px] outline-none border border-[#E0E0E0] rounded-lg mb-[10px] 800:mb-0 800:rounded-none 800:rounded-l-lg placeholder:text-[20px] placeholder:leading-[20px] placeholder:text-[#A6A6A6] 800:p-y-[18px] pr-[100px] pl-[23px] focus:text-[#A6A6A6] focus:leading-[20px] text-[20px]" placeholder="mail@example.com" type="email">
           <button class="800:rounded-none py-[18px] pr-[38px] pl-[31px] text-[24px] leading-[20px] font-semibold text-[#fff] bg-[#2979FF] rounded-lg 800:rounded-r-lg border
           hover:bg-[#fff] hover:text-second-color hover:border-[1px] hover:border-second-color transition duration-400">Download now</button>
         </div>
@@ -723,6 +746,8 @@
       </section>
     </main>
     <footer></footer>
-
+    <script src="./node_modules/@splidejs/splide-extension-auto-scroll/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script  src="./app.js"></script>
   </body>
 </html>
