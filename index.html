@@ -11,11 +11,12 @@
 
   </head>
   <body class="font-main text-main-color ">
-    <header class="relative ">
-      <div class="container">
+    <div class="wrapper">
+    <header class="header z-30 bg-[#fff] border-b border-solid border-[#E0E0E0]">
+      <div class="container ">
         <div class="flex justify-between min-h-[100px] items-center">
-          <div class="flex">
-            <a href="#">
+          <div class="flex logo">
+            <a class="" href="#">
               <img
                 class="max-h-[50px] max-w-[200px]"
                 src="./public/images/logo.svg"
@@ -23,40 +24,36 @@
             /></a>
 
             <p
-              class="hidden xl:flex text-[10px] leading-[12px] text-second-color flex items-end ml-[15px] max-w-[187px]"
+              class="hidden xl:flex text-[10px] leading-[12px] text-second-color items-end ml-[15px] max-w-[187px]"
             >
               DFG is a holding company for JetRuby, Jet Solutions, OZ Solutions
             </p>
           </div>
-          <div class=" flex items-center">
-            <div class="lg:hidden menu-btn z-50"><span class=" cursor-pointer  block"></span></div>
-            
-            
-            <nav class="navig lg:block ">
-                <ul 
-                  class="menu transition-all duration-300 translate-y-[-1000px] lg:translate-y-[0] text-[#fff] text-[22px] flex  items-center justify-center flex-col opacity-0 lg:opacity-100 lg:w-auto lg:h-auto w-[100%] h-[100vh] lg:flex lg:static absolute left-0 top-0 bg-second-color lg:bg-[#fff] lg:flex-row lg:text-main-color gap-[30px] lg:items-center lg:text-[17px] lg:leading-[21px]"
-                >
-                  <li><a href="#">Cases</a></li>
-                  <li><a href="#">HR Project Audit</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">Contacts</a></li>
+          <div class="header__menu menu">
+              <div class="menu__icon">
+                <span></span>
+              </div>
+              <nav class="menu__body">
+                <ul class="menu__list text-[#fff] lg:text-main-color">
+                  <li><a data-goto=".cases" class="menu__link" href="#">Cases</a></li>
+                  <li><a data-goto=".audit" class="menu__link" href="#">HR Project Audit</a></li>
+                  <li><a data-goto=".about" class="menu__link" href="#">About us</a></li>
+                  <li><a data-goto=".contacts" class="menu__link" href="#">Contacts</a></li>
                   <button
                   class="flex  items-center justify-center py-[15px] px-[37px] bg-[#fff] border-solid border-second-color border-2 rounded-lg text-second-color text-[20px] leading-[20px] font-semibold lg:hover:bg-second-color lg:hover:text-[#fff] transition-all duration-400"
                 >
                   Get in touch
                 </button>
                 </ul>
-
-            </nav>
-           
+              </nav>
           </div>
-        </div>
       </div>
     </header>
+  </div>
     <main>
       <section
         style="background-image: url('./public/images/bg-hero.svg')"
-        class="bg-cover bg-no-repeat bg-center min-w-full min-h-full border-t border-solid border-[#E0E0E0] mb-[50px] xl:mb-[150px]"
+        class="audit bg-cover bg-no-repeat bg-center min-w-full min-h-full  mb-[50px] xl:mb-[150px]"
       >
         <div class="container">
           <h1
@@ -69,7 +66,7 @@
           </h1>
           <p class="lg:text-[25px] text-[22px]  leading-[30px] text-main-color lg:mb-[60px] mb-[30px] text-center lg:text-left">
             <span
-              class="lg:text-[25px] text-[22px] text-second-color font-semibold text-[25px] leading-[30px]"
+              class="lg:text-[25px]  text-second-color font-semibold text-[25px] leading-[30px]"
               ><span class="text-[30px] leading-[36px]">57</span> HR
               applications</span
             >
@@ -276,7 +273,7 @@
           </div>
         </div>
       </section>
-      <section class=" mb-[50px] xl:mb-[150px]">
+      <section class="cases mb-[50px] xl:mb-[150px]">
         <div class="container">
           <div class="flex flex-col items-center ">
             <h2 class="text-[40px] leading-[48px] font-bold mb-[60px] text-center xl:text-left">
@@ -466,7 +463,7 @@
           </div>
         </div>
       </section>
-      <section class="mb-[50px] xl:mb-[150px]">
+      <section class="about mb-[50px] xl:mb-[150px]">
         <div class="container">
           <div class="">
             <h3 class="text-center xl:text-left text-[40px] font-bold leading-[48px] mb-[20px] ">About us</h3>
@@ -488,7 +485,7 @@
               </div>
              
             </div>
-            <div class="relative z-30 grid 600:grid-cols-2 xl:grid-cols-4 gap-y-[24px] gap-x-[20px] background-about">
+            <div class="relative z-10 grid 600:grid-cols-2 xl:grid-cols-4 gap-y-[24px] gap-x-[20px] background-about">
               <div class="about-us-item ">
                 <div class="mb-[20px]">
                   <img src="./public/images/star.svg" alt="" />
@@ -618,11 +615,11 @@
           </div>
         </div>
       </section>
-      <section class="mb-[50px] xl:mb-[150px] bg-color">
+      <section class="contacts mb-[50px] xl:mb-[150px] bg-color">
 <div class="container">
   <div class=" flex relative justify-center lg:justify-start">
 
-    <div class="flex flex-col items-center  lg:items-start z-50">
+    <div class="flex flex-col items-center  lg:items-start z-10">
         <h4 class="max-w-[80%] text-center lg:text-left font-bold text-[20px] 400:text-[36px] leading-[36px] 600:leading-[48px] mb-[23px] mt-[40px] 400:mt-[81px] 400:max-w-[784px]">The MOST complete Guide to Finding the Best Developer for your App.
         </h4>
         <ul class="flex flex-col items-center lg:block 400:text-[20px] leading-[130%] space-y-[10px] mb-[37px]">
