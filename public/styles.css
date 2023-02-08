@@ -921,15 +921,6 @@ html {
   border-color: rgb(41 121 255 / var(--tw-border-opacity));
 }
 
-.border-\[wh\] {
-  border-color: wh;
-}
-
-.border-\[white\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .border-opacity-25 {
   --tw-border-opacity: 0.25;
 }
@@ -1624,19 +1615,13 @@ html {
   border-color: rgb(41 121 255 / var(--tw-border-opacity));
 }
 
-.hover\:bg-second-color:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(41 121 255 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-\[\#fff\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.hover\:text-\[\#fff\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+.hover\:fill-second-color:hover {
+  fill: #2979FF;
 }
 
 .hover\:text-second-color:hover {

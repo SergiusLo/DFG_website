@@ -36,4 +36,14 @@ document.addEventListener("DOMContentLoaded", function () {
     body.classList.toggle("hid");
   });
 
+
+  
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      btn1.classList.remove("menu--active");
+      btn.classList.remove("btn--active");
+      body.classList.remove("hid");
+    }
+  });
 });
