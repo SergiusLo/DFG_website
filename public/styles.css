@@ -1612,6 +1612,42 @@ body._lock {
   }
 }
 
+.placeholder\:py-\[18px\]::-moz-placeholder {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.placeholder\:py-\[18px\]::placeholder {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.placeholder\:py-\[30px\]::-moz-placeholder {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.placeholder\:py-\[30px\]::placeholder {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.placeholder\:pr-\[100px\]::-moz-placeholder {
+  padding-right: 100px;
+}
+
+.placeholder\:pr-\[100px\]::placeholder {
+  padding-right: 100px;
+}
+
+.placeholder\:pl-\[23px\]::-moz-placeholder {
+  padding-left: 23px;
+}
+
+.placeholder\:pl-\[23px\]::placeholder {
+  padding-left: 23px;
+}
+
 .placeholder\:text-\[20px\]::-moz-placeholder {
   font-size: 20px;
 }
@@ -1673,6 +1709,11 @@ body._lock {
 
 .hover\:underline:hover {
   text-decoration-line: underline;
+}
+
+.focus\:py-\[18px\]:focus {
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .focus\:leading-\[20px\]:focus {
