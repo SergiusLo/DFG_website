@@ -83,8 +83,10 @@ document.addEventListener("DOMContentLoaded", function () {
       ) {
         const gotoBlock = document.querySelector(menuLink.dataset.goto);
         const gotoBlockValue =
-          gotoBlock.getBoundingClientRect().top + pageYOffset;
-        //- document.querySelector("header").offsetHeight;  ---- if fixed header
+          gotoBlock.getBoundingClientRect().top +
+          pageYOffset -
+          document.querySelector("header").offsetHeight;
+        //  ---- if fixed header
 
         if (iconMenu.classList.contains("_active")) {
           document.body.classList.remove("_lock");

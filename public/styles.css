@@ -551,6 +551,12 @@ html {
   }
 }
 
+@media (min-width: 1100px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+
 @media (min-width: 1224px) {
   .container {
     max-width: 1224px;
@@ -569,8 +575,12 @@ html {
   position: relative;
 }
 
-.right-\[-158px\] {
-  right: -158px;
+.top-\[10\%\] {
+  top: 10%;
+}
+
+.right-\[3\%\] {
+  right: 3%;
 }
 
 .z-30 {
@@ -602,16 +612,16 @@ html {
   margin-left: 15px;
 }
 
+.mt-\[100px\] {
+  margin-top: 100px;
+}
+
 .mb-\[50px\] {
   margin-bottom: 50px;
 }
 
 .mb-\[20px\] {
   margin-bottom: 20px;
-}
-
-.mt-\[35px\] {
-  margin-top: 35px;
 }
 
 .mb-\[30px\] {
@@ -636,10 +646,6 @@ html {
 
 .mb-\[32px\] {
   margin-bottom: 32px;
-}
-
-.mt-\[100px\] {
-  margin-top: 100px;
 }
 
 .mb-\[48px\] {
@@ -980,6 +986,10 @@ html {
   padding-right: 10px;
 }
 
+.pt-\[35px\] {
+  padding-top: 35px;
+}
+
 .pt-\[30px\] {
   padding-top: 30px;
 }
@@ -1040,8 +1050,8 @@ html {
   padding-right: 40px;
 }
 
-.pr-\[100px\] {
-  padding-right: 100px;
+.pr-\[30px\] {
+  padding-right: 30px;
 }
 
 .pl-\[23px\] {
@@ -1182,6 +1192,10 @@ html {
 
 .leading-\[1\.5rem\] {
   line-height: 1.5rem;
+}
+
+.leading-\[22px\] {
+  line-height: 22px;
 }
 
 .text-main-color {
@@ -1482,13 +1496,13 @@ body._lock {
   }
 }
 
-/* .header {
+.header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   min-height: 100px;
-} */
+}
 
 .logo {
   z-index: 100;
@@ -1507,7 +1521,7 @@ body._lock {
   text-decoration: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .menu__list {
     display: flex;
     align-items: center;
@@ -1612,42 +1626,6 @@ body._lock {
   }
 }
 
-.placeholder\:py-\[18px\]::-moz-placeholder {
-  padding-top: 18px;
-  padding-bottom: 18px;
-}
-
-.placeholder\:py-\[18px\]::placeholder {
-  padding-top: 18px;
-  padding-bottom: 18px;
-}
-
-.placeholder\:py-\[30px\]::-moz-placeholder {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.placeholder\:py-\[30px\]::placeholder {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.placeholder\:pr-\[100px\]::-moz-placeholder {
-  padding-right: 100px;
-}
-
-.placeholder\:pr-\[100px\]::placeholder {
-  padding-right: 100px;
-}
-
-.placeholder\:pl-\[23px\]::-moz-placeholder {
-  padding-left: 23px;
-}
-
-.placeholder\:pl-\[23px\]::placeholder {
-  padding-left: 23px;
-}
-
 .placeholder\:text-\[20px\]::-moz-placeholder {
   font-size: 20px;
 }
@@ -1711,15 +1689,6 @@ body._lock {
   text-decoration-line: underline;
 }
 
-.focus\:py-\[18px\]:focus {
-  padding-top: 18px;
-  padding-bottom: 18px;
-}
-
-.focus\:leading-\[20px\]:focus {
-  line-height: 20px;
-}
-
 .focus\:text-\[\#A6A6A6\]:focus {
   --tw-text-opacity: 1;
   color: rgb(166 166 166 / var(--tw-text-opacity));
@@ -1734,8 +1703,8 @@ body._lock {
     margin-left: 22px;
   }
 
-  .\34 00\:max-w-\[784px\] {
-    max-width: 784px;
+  .\34 00\:max-w-\[796px\] {
+    max-width: 796px;
   }
 
   .\34 00\:max-w-\[460px\] {
@@ -1748,6 +1717,10 @@ body._lock {
 
   .\34 00\:text-\[20px\] {
     font-size: 20px;
+  }
+
+  .\34 00\:leading-\[36px\] {
+    line-height: 36px;
   }
 }
 
@@ -1778,16 +1751,8 @@ body._lock {
 }
 
 @media (min-width: 800px) {
-  .\38 00\:mb-0 {
-    margin-bottom: 0px;
-  }
-
   .\38 00\:block {
     display: block;
-  }
-
-  .\38 00\:flex-row {
-    flex-direction: row;
   }
 
   .\38 00\:rounded-none {
@@ -1826,8 +1791,24 @@ body._lock {
     margin-bottom: 60px;
   }
 
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .lg\:block {
     display: block;
+  }
+
+  .lg\:min-w-\[240px\] {
+    min-width: 240px;
+  }
+
+  .lg\:max-w-\[100\%\] {
+    max-width: 100%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 
   .lg\:items-start {
@@ -1836,6 +1817,11 @@ body._lock {
 
   .lg\:justify-start {
     justify-content: flex-start;
+  }
+
+  .lg\:py-\[0px\] {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .lg\:text-left {
@@ -1848,6 +1834,10 @@ body._lock {
 
   .lg\:text-\[25px\] {
     font-size: 25px;
+  }
+
+  .lg\:text-\[40px\] {
+    font-size: 40px;
   }
 
   .lg\:leading-\[61px\] {
@@ -1867,6 +1857,20 @@ body._lock {
   .lg\:hover\:text-\[\#fff\]:hover {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+}
+
+@media (min-width: 1100px) {
+  .\31 100\:block {
+    display: block;
+  }
+
+  .\31 100\:items-start {
+    align-items: flex-start;
+  }
+
+  .\31 100\:justify-start {
+    justify-content: flex-start;
   }
 }
 
