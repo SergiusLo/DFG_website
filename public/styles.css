@@ -1339,6 +1339,13 @@ body._lock {
   overflow: hidden;
 }
 
+.line::before {
+  content: url("../public/images/line-app.svg");
+  position: absolute;
+  right: 96px;
+  z-index: 0;
+}
+
 .arrow-up-right::after {
   position: absolute;
   top: 0;
@@ -1534,6 +1541,14 @@ body._lock {
 }
 
 @media (max-width: 1024px) {
+  .line::before {
+    content: url("../public/images/line-app.svg");
+    position: absolute;
+    display: none;
+    right: 96px;
+    z-index: 0;
+  }
+
   .menu__icon {
     z-index: 100;
     display: block;
@@ -1813,10 +1828,6 @@ body._lock {
 
   .lg\:items-start {
     align-items: flex-start;
-  }
-
-  .lg\:justify-start {
-    justify-content: flex-start;
   }
 
   .lg\:py-\[0px\] {
