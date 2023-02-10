@@ -186,14 +186,16 @@ body._lock {
     display: flex;
     align-items: center;
     gap: 30px;
-    
   }
   .menu__list > li {
     padding: 10px 0;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
+  .menu__list > li {
+    color: white;
+  }
   .line::before {
     content: url("../public/images/line-app.svg");
     position: absolute;

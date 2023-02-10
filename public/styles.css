@@ -867,11 +867,6 @@ html {
   border-radius: 9999px;
 }
 
-.rounded-r-lg {
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-}
-
 .border-2 {
   border-width: 2px;
 }
@@ -1545,7 +1540,11 @@ body._lock {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
+  .menu__list > li {
+    color: white;
+  }
+
   .line::before {
     content: url("../public/images/line-app.svg");
     position: absolute;
@@ -1775,20 +1774,6 @@ body._lock {
     display: block;
   }
 
-  .\38 00\:rounded-none {
-    border-radius: 0px;
-  }
-
-  .\38 00\:rounded-l-lg {
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-  }
-
-  .\38 00\:rounded-r-lg {
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-  }
-
   .\38 00\:text-left {
     text-align: left;
   }
@@ -1839,14 +1824,14 @@ body._lock {
     border-radius: 0px;
   }
 
-  .lg\:rounded-r-lg {
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-  }
-
   .lg\:rounded-l-lg {
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
+  }
+
+  .lg\:rounded-r-lg {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
   }
 
   .lg\:py-\[0px\] {
